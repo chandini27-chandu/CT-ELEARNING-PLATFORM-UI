@@ -34,23 +34,38 @@ The project follows a component-based architecture, where each section of the ap
 
 ## Technologies Used
 HTML5
+
 CSS3
+
 JavaScript (ES6)
+
 React.js
+
 React Router DOM
+
 JSX
+
 Responsive Web Design
+
 Flexbox
+
 CSS Grid
 
 ## Tools Used
 Visual Studio Code (VS Code)
+
 Node.js
+
 npm (Node Package Manager)
+
 Vite
+
 Git
+
 GitHub
+
 Google Chrome (Browser)
+
 Chrome Developer Tools
 
   ## OUTPUTS:
