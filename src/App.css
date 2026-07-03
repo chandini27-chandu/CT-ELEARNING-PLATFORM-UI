@@ -1,38 +1,314 @@
-.App {
-  text-align: center;
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+
+  font-family: Arial, sans-serif;
+
+  background: #f4f7fb;
+
+  color: #222;
 }
 
-.App-header {
-  background-color: #282c34;
+/* HERO */
+
+.hero {
+
   min-height: 100vh;
+
+  background: linear-gradient(
+    to right,
+    #0f172a,
+    #1e40af
+  );
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  align-items: center;
+
+  text-align: center;
+
   color: white;
+
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-content {
+
+  max-width: 800px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero h1 {
+
+  font-size: 70px;
+
+  margin-bottom: 25px;
+}
+
+.hero p {
+
+  font-size: 26px;
+
+  margin-bottom: 35px;
+}
+
+.hero button {
+
+  padding: 16px 40px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #38bdf8;
+
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.hero button:hover {
+
+  background: #0ea5e9;
+}
+
+/* SECTION */
+
+.section {
+
+  padding: 100px 60px;
+}
+
+.section-title {
+
+  text-align: center;
+
+  font-size: 42px;
+
+  margin-bottom: 50px;
+}
+
+/* COURSES */
+
+.course-container {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 30px;
+}
+
+.course-card {
+
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+}
+
+.course-card:hover {
+
+  transform: translateY(-10px);
+}
+
+.course-card img {
+
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: cover;
+}
+
+.course-card h2 {
+
+  padding: 15px;
+}
+
+.course-card p {
+
+  padding: 0 15px 20px;
+}
+
+.course-card button {
+
+  margin: 15px;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+/* VIDEOS */
+
+.video-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 30px;
+}
+
+.video-grid iframe {
+
+  width: 100%;
+
+  height: 250px;
+
+  border: none;
+
+  border-radius: 15px;
+}
+
+/* PROGRESS */
+
+.progress-wrapper {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.progress-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.progress-card h2 {
+
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+
+  width: 100%;
+
+  height: 20px;
+
+  background: #ddd;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+
+  height: 100%;
+}
+
+.react {
+
+  width: 75%;
+
+  background: #2563eb;
+}
+
+.js {
+
+  width: 60%;
+
+  background: #f59e0b;
+}
+
+.python {
+
+  width: 85%;
+
+  background: #22c55e;
+}
+
+/* CONTACT */
+
+.contact-container {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 30px;
+}
+
+.contact-card {
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-card h2 {
+
+  margin-bottom: 15px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+
+    font-size: 42px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero p {
+
+    font-size: 20px;
+  }
+
+  .section {
+
+    padding: 80px 20px;
   }
 }

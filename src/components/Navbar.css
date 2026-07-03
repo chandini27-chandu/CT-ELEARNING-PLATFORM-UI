@@ -1,0 +1,57 @@
+html {
+
+  scroll-behavior: smooth;
+}
+
+.navbar {
+
+  position: fixed;
+
+  top: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 50px;
+
+  background: #0f172a;
+
+  z-index: 1000;
+}
+
+.logo {
+
+  color: white;
+
+  font-size: 30px;
+}
+
+.nav-links {
+
+  display: flex;
+
+  list-style: none;
+
+  gap: 30px;
+}
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+
+  color: #38bdf8;
+}
